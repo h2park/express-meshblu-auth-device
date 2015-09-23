@@ -1,4 +1,4 @@
-MeshbluAuthExpress = require 'express-meshblu-auth'
+MeshbluAuthExpress = require 'express-meshblu-auth/src/meshblu-auth-express'
 
 module.exports = (meshbluOptions) ->
   meshbluAuthExpress = new MeshbluAuthExpress meshbluOptions

@@ -1,6 +1,6 @@
 {
   "name": "express-meshblu-auth-device",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Express middleware for all meshblu auth styles for a singular device",
   "main": "index.js",
   "scripts": {
