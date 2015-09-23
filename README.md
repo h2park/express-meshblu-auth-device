@@ -26,6 +26,6 @@ Express middleware to support all meshblu auth styles for a singular device
       protocol: 'https'
     ));
     app.use(function (request, response) {
-      response.json({uuid: request.meshbluAuthDevice.uuid, token: request.meshbluAuthDevice.token});
+      response.json({uuid: request.meshbluAuth.uuid, token: request.meshbluAuth.token});
     });
     app.listen(3333);

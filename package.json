@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "coffee-script": "^1.9.1",
+    "express-meshblu-auth": "^1.4.0",
     "lodash": "^3.10.1",
     "meshblu-http": "^2.3.0",
     "request": "^2.55.0"

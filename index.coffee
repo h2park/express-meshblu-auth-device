@@ -1,4 +1,4 @@
-MeshbluAuthExpress = require './src/meshblu-auth-express'
+MeshbluAuthExpress = require 'express-meshblu-auth'
 
 module.exports = (meshbluOptions) ->
   meshbluAuthExpress = new MeshbluAuthExpress meshbluOptions
@@ -7,6 +7,8 @@ module.exports = (meshbluOptions) ->
     meshbluAuthExpress.getFromAnywhere request
     {uuid, token} = request.meshbluAuth ? {}
     return response.status(401).end() unless uuid? && token?
+    return response.status(401).end() if uuid != meshbluOptions.uuid
+    {uuid} = meshbluOptions
     meshbluAuthExpress.authDeviceWithMeshblu uuid, token, (error) ->
       if error?
         console.error error
