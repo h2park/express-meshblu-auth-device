@@ -1,6 +1,12 @@
 # Express Meshblu Device Authentication Middleware
 Express middleware to support all meshblu auth styles for a singular device
 
+[![Build Status](https://travis-ci.org/octoblu/express-meshblu-auth-device.svg?branch=master)](https://travis-ci.org/octoblu/express-meshblu-auth-device)
+[![Code Climate](https://codeclimate.com/github/octoblu/express-meshblu-auth-device/badges/gpa.svg)](https://codeclimate.com/github/octoblu/express-meshblu-auth-device)
+[![Test Coverage](https://codeclimate.com/github/octoblu/express-meshblu-auth-device/badges/coverage.svg)](https://codeclimate.com/github/octoblu/express-meshblu-auth-device)
+[![npm version](https://badge.fury.io/js/express-meshblu-auth-device.svg)](http://badge.fury.io/js/express-meshblu-auth-device)
+[![Gitter](https://badges.gitter.im/octoblu/help.svg)](https://gitter.im/octoblu/help)
+
 ## Supported Auth Methods
 
 * cookies: `request.cookies.meshblu_auth_uuid` and `request.cookies.meshblu_auth_token`
@@ -23,9 +29,3 @@ Express middleware to support all meshblu auth styles for a singular device
       response.json({uuid: request.meshbluAuthDevice.uuid, token: request.meshbluAuthDevice.token});
     });
     app.listen(3333);
-
-[![Build Status](https://travis-ci.org/octoblu/express-meshblu-auth-device.svg?branch=master)](https://travis-ci.org/octoblu/express-meshblu-auth-device)
-[![Code Climate](https://codeclimate.com/github/octoblu/express-meshblu-auth-device/badges/gpa.svg)](https://codeclimate.com/github/octoblu/express-meshblu-auth-device)
-[![Test Coverage](https://codeclimate.com/github/octoblu/express-meshblu-auth-device/badges/coverage.svg)](https://codeclimate.com/github/octoblu/express-meshblu-auth-device)
-[![npm version](https://badge.fury.io/js/express-meshblu-auth-device.svg)](http://badge.fury.io/js/express-meshblu-auth-device)
-[![Gitter](https://badges.gitter.im/octoblu/help.svg)](https://gitter.im/octoblu/help)
